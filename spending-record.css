@@ -1,0 +1,86 @@
+body {
+  padding: 10px 20px 30px 5px;
+}
+p {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  color: #fdfdfd;
+}
+input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+  gap: 10px;
+  width: 392px;
+  height: 9px;
+  background: #111217;
+  border: 1px solid #949bb7;
+  border-radius: 12px;
+}
+
+/*
+input {
+  margin-top: 5px;
+  height: 20px;
+  width: 200px;
+  border-top-right-radius: 20/20px;
+  border-radius: 15%;
+}
+*/
+body {
+  background-color: #111217;
+  color: rgb(254, 248, 248);
+}
+
+h2,
+h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 155%;
+  color: #949bb7;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.size_block {
+  column-count: 2;
+}
+
+.size_block label {
+  display: block;
+}
+* h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 59px;
+}
+.datalist {
+  width: 392px;
+  height: 4px;
+  background: #949bb7;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+textarea {
+  color: #111217;
+}

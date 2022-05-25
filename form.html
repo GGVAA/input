@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact us</title>
+    <link href="spending-record.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact us</h1>
+      <h2>Need an experienced and skilled hand with custom IT projects?</h2>
+      <h3>Fill out the form to get a free consultation</h3>
+    </header>
+    <form acyion="#" method="post" enctype="multipart/form-data">
+      <div class="size_block">
+        <p>
+          <label for="name">Your company name*</label>
+          <input
+            tebindex="1"
+            required="*your company name"
+            type="text"
+            id="name"
+            name="compony_name"
+          />
+        </p>
+        <p>
+          <label for="nature_business">Nature of business</label>
+          <input
+            tebindex="2"
+            required
+            checked
+            type="checkbox"
+            id="nature_business"
+            name="nature_business"
+          />
+        </p>
+        <p>
+          <label for="date">Data of registration</label>
+          <input tebindex="3" required type="date" id="date" name="date" />
+        </p>
+        <hr />
+        <p>
+          <label for="name">Contact name</label>
+          <input
+            tebindex="4"
+            required
+            type="text"
+            id="contact name"
+            name="contact name"
+          />
+        </p>
+        <p>
+          <label for="tel">Contact phone</label>
+          <input tebindex="5" type="tel" id="tel" name="tel" />
+        </p>
+        <p>
+          <label for="mail">E-mail:</label>
+          <input
+            tebindex="6"
+            required
+            type="email"
+            id="mail"
+            name="user_mail"
+          />
+        </p>
+        <div>
+          <input type="file" />
+        </div>
+        <div>
+          <p>Message</p>
+          <textarea tebindex="7" type="text"></textarea>
+        </div>
+        <label for="name">Country of registration</label>
+        <p>
+          <select tebindex="8" name="select">
+            <option value="value1">Ukraine</option>
+            <option value="value2">English</option>
+            <option value="value3">Poland</option>
+          </select>
+        </p>
+        <p>
+          <label for="name">Address</label>
+          <input
+            tebindex="9"
+            required
+            type="text"
+            id="address"
+            name="address"
+          />
+        </p>
+        <p>
+          <label for="name">Postcode</label>
+          <input
+            tebindex="10"
+            pattern="1"
+            required
+            type="text"
+            id="postcode"
+            name="postcode"
+          />
+        </p>
+        <p>
+          <label for="name">Let`s talk about your idea</label>
+          <textarea
+            name="your_idea"
+            id="your_idea"
+            cols="10"
+            rows="10"
+          ></textarea>
+        </p>
+        <p>
+          I want to protect my data by signing an NDA
+          <input tebindex="12" type="checkbox" required />
+        </p>
+        <p>
+          I have read and accept the Terms and Conditions
+          <input tebindex="13" required checked type="checkbox" />
+        </p>
+        <button>SUBMIT</button>
+        <p>
+          I want to protect my data by signing an NDA
+          <input tebindex="14" type="radiobth" required />
+        </p>
+        <p>let`s talk about your idea</p>
+        <input class="datalist" tebindex="15" type="range" list="tickmarks" />
+        <datalist tebindex="16" id="tickmarks">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+      </div>
+    </form>
+  </body>
+</html>
