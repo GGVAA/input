@@ -4,152 +4,210 @@
     <meta charset="utf-8" />
     <title>Contact us</title>
     <link href="spending-record.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <header>
-      <h1>Contact us</h1>
-      <h2>Need an experienced and skilled hand with custom IT projects?</h2>
-      <h3>Fill out the form to get a free consultation</h3>
-    </header>
-    <form acyion="#" method="post" enctype="multipart/form-data">
-      <div class="size_block">
-        <p>
-          <label for="name">Your company name*</label>
-          <input
-            tebindex="1"
-            required="*your company name"
-            type="text"
-            id="name"
-            name="compony_name"
-          />
-        </p>
-        <p>
-          <label for="nature_business*">Nature of business</label>
-          <input
-            tebindex="2"
-            required
-            checked
-            type="text"
-            id="nature_business"
-            name="nature_business"
-          />
-        </p>
-        <p>
-          <label for="date">Data of registration</label>
-          <input tebindex="3" required type="date" id="date" name="date" />
-        </p>
-        <p>
-          <label for="select">Country of registration* </label>
-          <select tebindex="4" name="select">
-            <option value="value1">Ukraine</option>
-            <option value="value2">English</option>
-            <option value="value3">Poland</option>
-          </select>
-        </p>
-        <p>
-          <label for="name">Address</label>
-          <input
-            tebindex="5"
-            required
-            type="text"
-            id="address"
-            name="address"
-          />
-        </p>
-        <p>
-          <label for="name">Postcode</label>
-          <input
-            tebindex="6"
-            pattern="1"
-            required
-            type="text"
-            id="postcode"
-            name="postcode"
-          />
-        </p>
-      </div>
-      <br />
-      <hr />
-
-      <div class="size_block">
-        <p>
-          <label for="name">Contact name</label>
-          <input
-            tebindex="7"
-            required
-            type="text"
-            id="contact name"
-            name="contact name"
-          />
-        </p>
-        <p>
-          <label for="tel">Contact phone</label>
-          <input tebindex="5" type="tel" id="tel" name="tel" />
-        </p>
-        <p>
-          <label for="mail">E-mail:</label>
-          <input
-            tebindex="8"
-            required
-            type="email"
-            id="mail"
-            name="user_mail"
-          />
-        </p>
-
-        <p>
-          <label for="name">Let`s talk about your idea</label>
-          <textarea
-            tabindex="9"
-            name="your_idea"
-            id="your_idea"
-            cols="10"
-            rows="10"
-          ></textarea>
-        </p>
-        <div>
-          <datalist tebindex="10" id="tickmarks">
-            <option value="0"></option>
-            <option value="10"></option>
-            <option value="20"></option>
-            <option value="30"></option>
-            <option value="40"></option>
-            <option value="50"></option>
-            <option value="60"></option>
-            <option value="70"></option>
-            <option value="80"></option>
-            <option value="90"></option>
-            <option value="100"></option>
-          </datalist>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header_container _container">
+          <a href="" class="header_logo"> LOGO </a>
+          <nav class="header_menu menu">
+            <ul class="menu_list">
+              <li class="menu_item">
+                <a href="" class="menu_link">Company</a>
+              </li>
+              <li class="menu_item">
+                <a href="" class="menu_link">Services</a>
+              </li>
+              <li class="menu_item">
+                <a href="" class="menu_link">FinTech Solutions</a>
+              </li>
+              <li class="menu_item">
+                <a href="" class="menu_link">Products</a>
+              </li>
+              <li class="menu_item">
+                <a href="" class="menu_link">Portfolio</a>
+              </li>
+              <li class="menu_item">
+                <a href="" class="menu_link">Contact us</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </div>
-      <br />
-      <hr />
-
-      <div class="size_block">
-        <div>
-          <input tebindex="11" type="file" />
-          <p>File size of your documents should not exceed 10MB</p>
+      </header>
+      <section class="contact-us">
+        <h1>Contact us</h1>
+        <span>Need an experienced and skilled hand with custom IT projects?</span>
+        <br />
+        <span>Fill out the form to get a free consultation</span>
+      </section>
+      <form class="contact-us-form" action="#" method="post" enctype="multipart/form-data">
+        <section class="form-section">
+        <div class="block">
+          <p>
+            <label for="company-name">Your company name*</label>
+            <input
+            type="text"
+            id="company-name"
+            name="company-name"
+            class="field"
+            required
+            />
+          </p>
+          <p>
+            <label for="nature-of-business">Nature of business*</label>
+            <input
+              type="text"
+              id="nature-of-business"
+              name="nature-of-business"
+              class="field"
+              required
+            />
+          </p>
+          <p>
+            <label for="data-of-registration">Data of registration</label>
+            <input
+              type="date"
+              id="data-of-registration"
+              name="data-of-registration"
+              class="field"
+            />
+          </p>
         </div>
-        <button>SUBMIT</button>
-        <div>
-          <label
-            ><input tebindex="12" type="checkbox" required nane="nda" /><span
-              >I want to protect my data by signing an NDA</span
+
+        <div class="block">
+          <p>
+            <label for="country-of-registration">Country of registration</label>
+            <select
+              name="country-of-registration"
+              id="country-of-registration"
+              class="field"
+              required
             >
-          </label>
+              <option value="">Select</option>
+              <option value="0">Poland</option>
+              <option value="1">Ukraine</option>
+              <option value="2">England</option>
+            </select>
+          </p>
+          <p>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" class="field" />
+          </p>
+          <p>
+            <label for="postcode">Postcode</label>
+            <input type="number" id="postcode" name="postcode" class="field" />
+          </p>
         </div>
-        <div>
-          I have read and accept the Terms and Conditions
-          <input tebindex="13" required checked type="checkbox" />
+      </section>
+
+      <section class="form-section">
+        <div class="block">
+          <p>
+            <label for="contact_name">Contact name</label>
+            <input type="text" id="contact_name" name="contact_name" class="field" required />
+          </p>
+          <p>
+            <label for="contact_phone">Contact phone</label>
+            <input
+              type="tel"
+              id="contact_phone"
+              name="contact_phone"
+              class="field"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email</label>
+            <input required type="email" id="email" class="field" name="email" />
+          </p>
         </div>
 
-        <div>
-          I want to protect my data by signing an NDA
-          <input tebindex="14" type="radiobth" required />
+        <div class="block">
+          <p>
+            <label for="Let`s_talk_about_your_idea"
+              >Let`s talk about your idea</label
+            >
+            <textarea
+              name="Let`s_talk_about_your_idea"
+              id="Let`s_talk_about_your_idea"
+              cols="52"
+              rows="10"
+              class="field"
+            ></textarea>
+          </p>
+            <div>
+              <input class="range" type="range" list="number"
+              min=0 step="10" max="100" value="50">
+              <datalist tebindex="10" id="tickmarks">
+                <option value="0">0</option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100">100</option>
+              </datalist>
         </div>
+      </section>
+      <section class="form-section">
+        <div class="block">
+          <p>
+            <label class="file-upload" for="file">Upload addition file</label>
+            <input type="file" id="file" name="file">
+          </p>
+          <p class="file-upload_two"> File size of your documents should not exceed 10MB</p>
+          <p>
+             <input class="submit" type="submit" value="Submit" />
+          </p> 
+          <br>          
+          <p> 
+            <label for=""></label>
+            <input type="checkbox" required>
+            I want to protect my data by signing an NDA
+          </p>
+        </div>
+        <div class="block">
+          <p>
+            <input type="checkbox" required> I want to protect my data by signing an NDA
+          </p>
+          <br>
+          <p>
+          <input type="checkbox" checked required>
+          I have read and accept the Terms and Conditions
+          </p>
+        </div>
+      </section>
+      </form>
+    </div>
+    <footer>
+      <div>
+        <h2>Career</h2>
+        <p>If you are interested in working at Logo send us your CV to careers@logo.com
+          and we can talk</p>   
       </div>
-    </form>
-    <footer class="footer"></footer>
+      <div>
+        <h2>Offices</h2>
+        <p>United States of America</p>
+        <p>500 5th Avenue Suite 400, NY 10110</p>
+        <br>
+        <p>United Kingdom</p>
+        <p>High St, Bromley BR1 1DN</p>
+        <br>
+        <p>France</p>
+        <p>80 avenue des Terroirs de France, Paris</p>
+      </div>
+      <div>
+        <h2>For Quick Inquiries</h2>
+        <p>+44 7911 123456</p>
+        <p>+1-212-456-7890</p>
+      </div>
+    </footer>  
+    <script src="form.js"></script>
   </body>
 </html>
