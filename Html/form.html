@@ -49,47 +49,29 @@
       <section class="section__one__contact-us-form">
         <div class="section__one__contact-us-form__container container">
           <div class="section__one__left">
-              <div><label class="header__text label__text" for="company-name">Your company name*</label></div>
-              <div><input
-              type="text"
-              id="company-name"
-              name="company-name"
-              class="field"
-              required
-              /></div>
-              <div><label class="header__text label__text" for="nature-of-business">Nature of business*</label></div>
-              <div><input
-                type="text"
-                id="nature-of-business"
-                name="nature-of-business"
-                class="field"
-                required
-              /></div>
-              <div><label class="header__text label__text" for="data-of-registration">Data of registration</label></div>
-                <div><input
-                type="date"
-                id="data-of-registration"
-                name="data-of-registration"
-                class="field"
-              /></div>
+            <form class="section__one__left" action="#" method="post" enctype="multipart/form-data">
+              <label class="header__text label__text" for="company-name">Your company name*</label>
+              <input type="text" id="company-name" name="company-name" class="field" required/>
+              <label class="header__text label__text" for="nature-of-business">Nature of business*</label>
+              <input type="text" id="nature-of-business" name="nature-of-business" class="field" required/>
+              <label class="header__text label__text" for="data-of-registration">Data of registration</label>
+              <input type="date" id="data-of-registration" name="data-of-registration" class="field"/>
+            </form>  
           </div>
           <div class="section__one__right">
-              <div><label class="header__text label__text" for="country-of-registration">Country of registration</label></div>
-              <div><select
-                name="country-of-registration"
-                id="country-of-registration"
-                class="field"
-                required
-              >
+            <form class="section__one__left" action="#" method="post" enctype="multipart/form-data">
+              <label class="header__text label__text" for="country-of-registration">Country of registration</label>
+              <select name="country-of-registration" id="country-of-registration" class="field" required >
                 <option value="">Select</option>
                 <option value="0">Poland</option>
                 <option value="1">Ukraine</option>
                 <option value="2">England</option>
-              </select></div>
-              <div><label class="header__text label__text" for="address">Address</label></div>
-              <div><input type="text" id="address" name="address" class="field" /></div>
-              <div><label class="header__text label__text" for="postcode">Postcode</label></div>
-              <div><input type="number" id="postcode" name="postcode" class="field" /></div>
+              </select>
+              <label class="header__text label__text" for="address">Address</label>
+              <input type="text" id="address" name="address" class="field" />
+              <label class="header__text label__text" for="postcode">Postcode</label>
+              <input type="number" id="postcode" name="postcode" class="field" />
+            </form>  
           </div> 
         </div>
         <hr>
@@ -97,73 +79,48 @@
       <section class="section__two__contact-us-form">
         <div class="section__two__contact-us-form__container container">
           <form class="section__two__left" action="#" method="post" enctype="multipart/form-data">
-            <label class="lable__section__two" for="contact_name">Contact name</label>
+            <label class="header__text label__text" for="contact_name">Contact name</label>
             <input type="text" id="contact_name" name="contact_name" class="field" required />
-            <label class="lable__section__two" for="contact_phone">Contact phone</label>
+            <label class="header__text label__text" for="contact_phone">Contact phone</label>
             <input type="tel"  id="contact_phone"  name="contact_phone"  class="field"  required/>
-            <label class="lable__section__two" for="email">Email</label>
-          <input required type="email" id="email" class="field" name="email" />
+            <label class="header__text label__text" for="email">Email</label>
+            <input required type="email" id="email" class="field" name="email" />
           </form>
-          <div class="section__two__right">
-            <div><label class="lable__section__two" for="Let`s_talk_about_your_idea">Let`s talk about your idea</label></div>
-            <div> <textarea class="field" name="Let`s_talk_about_your_idea" resize="none" id="Let`s_talk_about_your_idea" cols="52" rows="10" class="field"></textarea></div>
-          </div>
-      </section>
-      <hr>
-
-
-
-
-        
-        
-            <div>
-              <input class="range" type="range" list="number"
-              min=0 step="10" max="100" value="50">
-              <datalist tebindex="10" id="tickmarks">
-                <option value="0">0</option>
-                <option value="10"></option>
-                <option value="20"></option>
-                <option value="30"></option>
-                <option value="40"></option>
-                <option value="50"></option>
-                <option value="60"></option>
-                <option value="70"></option>
-                <option value="80"></option>
-                <option value="90"></option>
-                <option value="100">100</option>
-              </datalist>
+          <form class="section__two__right" action="#" method="post" enctype="multipart/form-data">  
+            <label class="header__text label__text" for="Let`s_talk_about_your_idea">Let`s talk about your idea</label>
+            <textarea class="field" name="Let`s_talk_about_your_idea" id="Let`s_talk_about_your_idea"></textarea>
+            <input class="range" type="range" list="number" min=0 step="10" max="100" value="50">
+          </form>
         </div>
       </section>
-      <section class="form-section">
-        <div class="block">
-          <p>
-            <label class="file-upload" for="file">Upload addition file</label>
-            <input type="file" id="file" name="file">
-          </p>
-          <p class="file-upload_two"> File size of your documents should not exceed 10MB</p>
-          <p>
-             <input class="submit" type="submit" value="Submit" />
-          </p> 
-          <br>          
-          <p> 
-            <label for=""></label>
+      <hr class="hr__section__two">
+      <section class="section__three__contact-us-form">
+      <div class="section__three__contact-us-form__container container ">
+        <form class="section__three__left" action="#" method="post" enctype="multipart/form-data">>
+          <label class="file-upload" for="file">Upload addition file</label>
+          <input type="file" id="file" name="file">
+          <input class="submit" type="submit" value="Submit" />
+          <br>
+          <p class="text__checkbox"> 
             <input type="checkbox" required>
             I want to protect my data by signing an NDA
           </p>
-        </div>
-        <div class="block">
-          <p>
-            <input type="checkbox" required> I want to protect my data by signing an NDA
+        </form>
+        <form class="section__three__right" action="#" method="post" enctype="multipart/form-data">>
+          <p class="text__checkbox">
+            <input class="checkbox__section__three__right" type="checkbox" required> I want to protect my data by signing an NDA
           </p>
           <br>
-          <p>
-          <input type="checkbox" checked required>
+          <p class="text__checkbox">
+            <input class="checkbox__section__three__right" type="checkbox" checked required>
           I have read and accept the Terms and Conditions
           </p>
-        </div>
+          
+        </form>
+      </div>  
+      
       </section>
-      </form>
-    </div>
+
     <footer>
       <div>
         <h2>Career</h2>
