@@ -71,10 +71,12 @@
               <input type="text" id="address" name="address" class="field" />
               <label class="header__text label__text" for="postcode">Postcode</label>
               <input type="number" id="postcode" name="postcode" class="field" />
-            </form>  
+            </form> 
+    
           </div> 
+          <hr class="hr__section__two"> 
         </div>
-        <hr>
+        
       </section>
       <section class="section__two__contact-us-form">
         <div class="section__two__contact-us-form__container container">
@@ -82,31 +84,38 @@
             <label class="header__text label__text" for="contact_name">Contact name</label>
             <input type="text" id="contact_name" name="contact_name" class="field" required />
             <label class="header__text label__text" for="contact_phone">Contact phone</label>
-            <input type="tel"  id="contact_phone"  name="contact_phone"  class="field"  required/>
+            <input type="number"  id="contact_phone"  name="contact_phone"  class="field"  required/>
             <label class="header__text label__text" for="email">Email</label>
             <input required type="email" id="email" class="field" name="email" />
           </form>
           <form class="section__two__right" action="#" method="post" enctype="multipart/form-data">  
+          
             <label class="header__text label__text" for="Let`s_talk_about_your_idea">Let`s talk about your idea</label>
-            <textarea class="field" name="Let`s_talk_about_your_idea" id="Let`s_talk_about_your_idea"></textarea>
-            <input class="range" type="range" list="number" min=0 step="10" max="100" value="50">
+            <textarea  name="Let`s_talk_about_your_idea" id="Let`s_talk_about_your_idea"></textarea>
+            <div class="range" style="--step:10; --min:20; --max:100">
+              <input type="range" min="20" max="100" step="10" value="30">
+            </div>
           </form>
+          <hr id="3333" class="hr__section__two">
         </div>
       </section>
-      <hr class="hr__section__two">
       <section class="section__three__contact-us-form">
       <div class="section__three__contact-us-form__container container ">
-        <form class="section__three__left" action="#" method="post" enctype="multipart/form-data">>
-          <label class="file-upload" for="file">Upload addition file</label>
-          <input type="file" id="file" name="file">
+        <form class="section__three__left" action="#" method="post" enctype="multipart/form-data">
+          
+          
+          <input type="file" class="custom-file-input">
+          <label class="upLoadFileText">File size of your documents should not exceed 10MB</label>
+           
+      
           <input class="submit" type="submit" value="Submit" />
           <br>
           <p class="text__checkbox"> 
-            <input type="checkbox" required>
+            <input type="radio" required>
             I want to protect my data by signing an NDA
           </p>
         </form>
-        <form class="section__three__right" action="#" method="post" enctype="multipart/form-data">>
+        <form class="section__three__right" action="#" method="post" enctype="multipart/form-data">
           <p class="text__checkbox">
             <input class="checkbox__section__three__right" type="checkbox" required> I want to protect my data by signing an NDA
           </p>
@@ -115,34 +124,39 @@
             <input class="checkbox__section__three__right" type="checkbox" checked required>
           I have read and accept the Terms and Conditions
           </p>
-          
         </form>
       </div>  
-      
       </section>
+      <footer class="section__footer">
+       <div class="section__footer__container">
+        <div class="section__footer__one">
+          <h2 class="footer__header">Career</h2>
+          <p class="footer__text">If you are interested in working at Logo send us your CV to <span class="span__email">careers@logo.com</span>
+            and we can talk</p> 
+            <div class="footer___section__one__img">
+              <div class="img__inst"> <img src="../Img/instagram.svg" alt=""> </div>
+              <div class="img__fb"><img src="../Img/fb.svg" alt=""></div>
+              <div class="img__telegram"> <img src="../Img/telegram.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="section__footer__two">
+          <p class="footer__header">Offices</p>
+          <p class="footer__text">United States of America</p>
+          <p class="footer__text">500 5th Avenue Suite 400, NY 10110</p>
+          <br>
+          <p class="footer__text">United Kingdom<p>
+          <p class="footer__text">High St, Bromley BR1 1DN</p>
+          <br>
+          <p class="footer__text" >France</p>
+          <p class="footer__text">80 avenue des Terroirs de France, Paris</p> 
+          </div>       
+        <div class="section__footer__three">
+          <p class="footer__text" >For Quick Inquiries</p>
+          <p class="footer__text">+44 7911 123456</p>
+          <p class="footer__text">+1-212-456-7890</p>
 
-    <footer>
-      <div>
-        <h2>Career</h2>
-        <p>If you are interested in working at Logo send us your CV to careers@logo.com
-          and we can talk</p>   
-      </div>
-      <div>
-        <h2>Offices</h2>
-        <p>United States of America</p>
-        <p>500 5th Avenue Suite 400, NY 10110</p>
-        <br>
-        <p>United Kingdom</p>
-        <p>High St, Bromley BR1 1DN</p>
-        <br>
-        <p>France</p>
-        <p>80 avenue des Terroirs de France, Paris</p>
-      </div>
-      <div>
-        <h2>For Quick Inquiries</h2>
-        <p>+44 7911 123456</p>
-        <p>+1-212-456-7890</p>
-      </div>
+        </div>
+        </div>
     </footer>  
     <script src="form.js"></script>
   </body>
